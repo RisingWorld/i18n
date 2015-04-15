@@ -77,7 +77,7 @@ end
 
 **Note**: we did not specify a player, here, therefore the default locale will be used (i.e. `"fr"`)
 
-The `.locale` files are simply properties. They are using the `.locale` extention as a convention and for semantics.
+The `.locale` files are simply properties. They are using the `.locale` extension as a convention and for semantics.
 
 Each localized strings are sent through the `string.format` function. Therefore, the locale files may look like this :
 
@@ -93,7 +93,7 @@ script.ready=Script v%s prêt!
 
 ```
 # de.locale
-script.ready=Skript v0.1 fertig!
+script.ready=Skript v%s fertig!
 ```
 
 **IMPORTANT!** All locale files declared via the `i18n.availableLocales` config property must exist! They may, however, be empty, or missing some properties.
